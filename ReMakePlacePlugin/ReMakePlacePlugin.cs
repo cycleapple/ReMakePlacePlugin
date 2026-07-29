@@ -28,7 +28,7 @@ namespace ReMakePlacePlugin;
 
 public class ReMakePlacePlugin : IDalamudPlugin
 {
-    public string Name => $"ReMakePlace Plugin v7.3.2";
+    public string Name => "ReMakePlace Plugin v7.3.4";
 
     private string[] commandNames = ["remakeplace", "rmp", "makeplace"];
     public PluginUi Gui { get; private set; }
