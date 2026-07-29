@@ -103,13 +103,13 @@ public class ReMakePlacePlugin : IDalamudPlugin
 
         var taskManagerConfig = new TaskManagerConfiguration()
         {
-            OnTaskException = (task, ex, ref @continue, ref abort) =>
+            OnTaskException = (TaskManagerTask task, Exception ex, ref bool @continue, ref bool? abort) =>
             {
                 LogError($"Error during dyeing task '{task.Name}'.");
                 TaskManager?.Abort();
                 DyeAllItems();
             },
-            OnTaskTimeout = (task, ref remainingTimeMs) =>
+            OnTaskTimeout = (TaskManagerTask task, ref long remainingTimeMs) =>
             {
                 LogError($"Timeout during dyeing task '{task.Name}'.");
                 TaskManager?.Abort();

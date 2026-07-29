@@ -722,7 +722,7 @@ public class ConfigurationWindow : Window, IDisposable
 
         for (int i = 0; i < itemList.Count(); i++)
         {
-            var player = Svc.Objects.LocalPlayer;
+            var player = Svc.ClientState.LocalPlayer;
             if (player == null) return;
             var playerPos = player.Position;
             var housingItem = itemList[i];
