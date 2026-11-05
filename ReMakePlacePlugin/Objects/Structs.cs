@@ -1,4 +1,4 @@
-﻿using Lumina.Excel.Sheets;
+using Lumina.Excel.Sheets;
 using System;
 using System.Numerics;
 using System.Runtime.InteropServices;
@@ -184,8 +184,8 @@ public unsafe struct LayoutWorld
 public struct LayoutManager
 {
     [FieldOffset(0x20)] public uint TerritoryTypeId;
-    [FieldOffset(0x80)] private readonly IntPtr _housingController;
-    [FieldOffset(0x90)] private readonly IntPtr _indoorAreaData;
+    [FieldOffset(0xA0)] private readonly IntPtr _housingController;
+    [FieldOffset(0xB0)] private readonly IntPtr _indoorAreaData;
 
     public HousingController? HousingController
     {
