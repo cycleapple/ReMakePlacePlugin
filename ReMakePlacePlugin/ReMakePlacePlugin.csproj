@@ -1,5 +1,5 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<Project Sdk="Dalamud.NET.Sdk/13.1.0">
+<?xml version="1.0" encoding="utf-8"?>
+<Project Sdk="Dalamud.NET.Sdk/14.0.1">
 	<PropertyGroup>
 		<PluginVersion>7.3.4</PluginVersion>
 		<LangVersion>latest</LangVersion>
@@ -41,6 +41,6 @@
 	</ItemGroup>
 
 	<ItemGroup>
-	  <PackageReference Include="ECommons" Version="3.0.1.28" />
+	  <PackageReference Include="ECommons" Version="3.1.0.29" />
 	</ItemGroup>
 </Project>
